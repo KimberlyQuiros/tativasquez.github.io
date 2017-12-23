@@ -30,15 +30,12 @@ module.exports = function(grunt) {
                 files: { 
                     'js/script.min.js': ['components/js/script.js'],
                     'js/plugins.min.js': [
-                        'components/plugins/js/enquire.js',
                         'components/plugins/js/jquery.easing.min.js',
                         'components/plugins/js/scrolling-nav.js',
-                        'components/plugins/js/jquery.stellar.min.js',
                         'components/plugins/js/jquery.matchHeight.js',
                         'components/plugins/js/jquery.scrollstop.min.js',
                         'components/plugins/js/jquery.lazyload.min.js',
-                        'components/plugins/js/bootstrap.min.js',
-                        'components/plugins/js/mdb.min.js'
+                        'components/plugins/js/bootstrap.min.js'
                     ]
                 }
             }
@@ -70,17 +67,17 @@ module.exports = function(grunt) {
             }, /* js */
 
             pluginsJs: {
-                files: 'components/js/*.js',
-                tasks: ['plugin']
-            },
+                files: 'components/plugins/js/*.js',
+                tasks: ['uglify']
+            }
 
-            images: {
+            /*images: {
                 files: ['components/img/*.{png,jpg}'],
                 tasks: ['newer:imagemin'],
                 options: {
                     spawn: false,
                 }
-            }  /* images-watch */
+            }   images-watch */
         } /* watch */
     });
 

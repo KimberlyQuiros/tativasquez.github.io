@@ -1,0 +1,114 @@
+.menu {
+  display: none;
+
+  @media (min-width: 992px) {
+  	display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+}
+
+#menu-toggle{
+ @media(min-width: 768px){
+  display: none;
+ }
+}
+
+@media (max-width: 767px) {
+    .navbar-default {
+        @include breakpoint();
+    }   
+}
+
+/*Change toggle size by adjusting width & height*/
+.tb-menu-toggle {
+  border: 0;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  margin-top: 21px;
+  z-index: 4;
+
+  @media (min-width: $medium){
+		display: none;
+  }
+}
+
+/*Change toggle color here*/
+.tb-menu-toggle i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 7%;
+  -webkit-transition:all .2s;
+   -moz-transition:all .2s;
+     -o-transition:all .2s;
+        transition:all .2s;
+}
+.tb-menu-toggle i:first-child {
+  width: 60%;
+}
+.tb-active-toggle i:first-child{
+  display: none;
+}
+.tb-menu-toggle i:nth-child(2) {
+  top: 33%;
+}
+.tb-menu-toggle i:nth-child(3) {
+  top: 66%;
+}
+
+/*Animation of the toggle*/
+.tb-menu-toggle.tb-animate-toggle i:first-child,
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2){
+  top: 40%;
+  -webkit-transform:rotate(45deg);
+   -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+     -o-transform:rotate(45deg);
+        transform:rotate(45deg);
+}
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3){
+  top: 40%;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.main-mobile{
+	clear: both;
+	background-color: rgba(35,35,35,0.8);
+	height: 100vh;
+	padding-top: 48px;
+
+	@media (min-width: $medium) {
+		padding: 0;
+		height: 0;
+	}
+
+	li{
+		text-align: center;
+		list-style: none;
+		margin-top: 40px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+		@media (min-width: $medium) {
+			text-align: right;
+			display: inline-block;
+			margin-right: 29px;
+		}
+	}
+
+	@media (min-width: $medium) {
+		background: none;
+	}
+}

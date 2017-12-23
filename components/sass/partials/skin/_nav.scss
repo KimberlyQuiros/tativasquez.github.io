@@ -1,0 +1,17 @@
+// navbar
+  .navbar .navbar-nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-family: $title;
+    @media(max-width: 767px){
+      padding-top: 30px;
+      padding-bottom: 30px;
+      font-size: 22px;
+      text-align: center;
+    }
+    &:hover, &:focus, &:active{
+      @media(max-width: 767px){
+      }
+    }
+  }

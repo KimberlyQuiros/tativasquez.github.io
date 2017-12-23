@@ -20,21 +20,21 @@
 @import "partials/mixins";
 @import "partials/globals";
 
-/*
- * Layout
- */
- @import "partials/layout/header";
- @import "partials/layout/nav";
- @import "partials/layout/about";
- @import "partials/layout/skills";
- @import "partials/layout/projects";
-@import "partials/layout/footer";
+ /*
+  * Layout
+  */
+  @import "partials/layout/cover";
+  @import "partials/layout/nav";
+//  @import "partials/layout/about";
+//  @import "partials/layout/skills";
+//  @import "partials/layout/projects";
+// @import "partials/layout/footer";
 
-/*
+ /*
  * Skin
  */
- @import "partials/skin/header";
- @import "partials/skin/about";
- @import "partials/skin/skills";
- @import "partials/skin/projects";
-@import "partials/skin/footer";
+  @import "partials/skin/nav";
+//  @import "partials/skin/about";
+//  @import "partials/skin/skills";
+//  @import "partials/skin/projects";
+// @import "partials/skin/footer";

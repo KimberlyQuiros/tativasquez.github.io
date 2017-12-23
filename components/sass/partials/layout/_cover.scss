@@ -1,0 +1,53 @@
+.cover-nav{
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  position:relative;
+  
+  .container{
+    height: 100%;
+  }
+  .content-logo{
+    img{
+      width: 250px;
+      margin-top: 10%;
+    }
+    p{
+      margin-top: 25px;
+      color: $color_cover;  
+    }
+  }
+  @include keyframes(bounce) {
+    0%, 20%, 50%, 80%, 100% {
+      @include transform(translateY(0));
+    }
+    40% {
+      @include transform(translateY(-20px));
+    }
+    60% {
+      @include transform(translateY(-10px));
+    }
+  }
+  .encircle {
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .arrow {
+    margin:0 auto;
+    margin-top: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDg2LjAwMSA4Ni4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDg2LjAwMSA4Ni4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4Ij4KPGc+Cgk8cGF0aCBkPSJNNS45MDcsMjEuMDA0Yy0xLjM1Mi0xLjMzOC0zLjU0Mi0xLjMzOC00Ljg5NCwwYy0xLjM1LDEuMzM2LTEuMzUyLDMuNTA2LDAsNC44NDRsMzkuNTQsMzkuMTUgICBjMS4zNTIsMS4zMzgsMy41NDIsMS4zMzgsNC44OTQsMGwzOS41NC0zOS4xNWMxLjM1MS0xLjMzOCwxLjM1Mi0zLjUwNiwwLTQuODQ0Yy0xLjM1Mi0xLjMzOC0zLjU0Mi0xLjMzOC00Ljg5NC0wLjAwMkw0Myw1Ni43MDcgICBMNS45MDcsMjEuMDA0eiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+    background-size: contain;
+  }
+  .bounce {
+    @include animation(bounce 2s infinite);
+  }
+}
