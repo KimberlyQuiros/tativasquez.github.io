@@ -3,6 +3,10 @@
   height: 100vh;
   width: auto;
   position:relative;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -ms-background-attachment: fixed;
+  background-attachment: fixed;
   
   .container{
     height: 100%;
@@ -33,7 +37,7 @@
     height:60px;
     border-radius:60px;
     position: absolute;
-    bottom: 35px;
+    bottom: 60px;
     left: 0;
     right: 0;
     margin-left: auto;

@@ -1,20 +1,27 @@
 /*----------Indice----------
-		#colors
 		#tipography
-		#max-width
-		#padding-left-and-right-of-the-header
+		#colors
+		#breakpoints
 */
 //	#Typography
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
-$title: 'Julius Sans One', sans-serif;
-$body: 'Lato', sans-serif;;
+$title: 'Arvo', serif;
+$body: 'Varela Round', sans-serif;
 
 //	#colors
 $color_cover: #fff;
+$color_nav: #4d4c4c;
+$color_text: #787878;
+$icon_color1: #8787af;
+$icon_color2: #adc3e5;
+$text_nav: $color_cover;
+$color_title: #4d4c4c;
+$color_project: #e0e8ee;
+$color_btn: #888888;
 
-
+// #Breakpoints
 $base: 420px;
 $small: 600px;
 $medium: 900px;

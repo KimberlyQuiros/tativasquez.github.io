@@ -1,12 +1,37 @@
-.menu {
-  display: none;
+#top-header{
+  .menu {
+    display: none;
 
-  @media (min-width: 992px) {
-  	display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
+    @media (min-width: 992px) {
+    	display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+    .navbar-nav{
+      float: none;
+      text-align: center;
+      margin: 0 auto;
+      li{
+        float: none;
+        display: inline-block;
+        margin: 0 15px;
+        a {
+          padding-top: 22px;
+          padding-bottom: 22px;
+        }
+      }
+    }
+  }
+}
+
+.fixed{
+  .menu{
+    position: fixed!important;
+    top: 0;
+    bottom:auto!important;
+    z-index: 1;
   }
 }
 

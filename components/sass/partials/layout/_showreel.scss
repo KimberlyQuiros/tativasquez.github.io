@@ -1,0 +1,15 @@
+.content-showreel{
+	@include contentSection;
+	overflow: hidden;
+	.container{
+		@include decoracion(28%, 28%);
+		overflow: hidden;
+	}
+	.content-vimeo{
+		margin: 25px auto;
+		text-align:center;
+		iframe{
+			width: 60%;
+		}
+	}
+}

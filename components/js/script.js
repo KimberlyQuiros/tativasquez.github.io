@@ -21,21 +21,6 @@
         }, false );
     }
 
-    /* active parallax: min-width > 1000px */
-    enquire.register("screen and (min-width: 1000px)", {
-        match : function() {
-            $.stellar({
-               horizontalScrolling: false,
-               responsive: true
-            });
-            //console.log("match");
-        },
-        unmatch : function() {
-            $.stellar("destroy");
-            //console.log("unmatch");
-        }
-    });
-
     navbarFixedTop();
 
 }());
@@ -45,47 +30,6 @@
 $(function() {
     $('.item-height').matchHeight();
 });
-
-(function () {
-
-    /* Match Elements */
-    $(window).on('load resize ready', function () {
-        var _ww = window.innerWidth;
-
-        // Match captions de galeria de fotos comun
-        MatchMe('.GalleyWithCaptions', '.figure .caption', 600);
-
-        // Match colText en Agenda
-        MatchMe('.skills', '.item-height', 319);
-
-        // Match <p> dentro del card-block en Learning Center
-        MatchMe('.learningItems', '.card-block p', 768);
-
-
-        // Match coltext dentro del card, contiguo al logo en Learning Center
-       // MatchMe('.learningItems', '.card', 768);
-        if ($('.learningItems').length > 0) {
-            _ww > 768 ? $('.card .row .colText').matchHeight({byRow: true}) : $('.card .row .colText').matchHeight({remove: false});
-        }
-    });
-
-    /* function Match Height
-     * Autor: Francisco Chanto  - francisco@baum.digital
-     * Requiere variable: var ww = window.innerWidth;
-     * _c = condicion => si el selector existe
-     * _s = selector  => al que se le aplica el plugin
-     * _q = media query => media query donde termina */
-    function MatchMe(_c, _s, _q) {
-        var ww = window.innerWidth;
-        if ($(_c).length > 0) {
-            ww > _q ? $(_s).matchHeight({byRow: true}) : $(_s).matchHeight({remove: true});
-        }
-    }
-
-})();
-
-
-
 
 $(window).on('load', function () {
   /* VARIABLES */

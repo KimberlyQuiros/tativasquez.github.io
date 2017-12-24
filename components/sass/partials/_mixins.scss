@@ -10,11 +10,35 @@
 @mixin button($border, $background-color, $color) {
   @include font-size(14);
   background-color: $background-color;
-  border: 0;
-  border-radius: 2px;
+  border: 1px solid $border;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 0;
   color: $color;
   font-family: $title;
-  padding: 8px 17px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  position:relative;
+  &:before{
+    content:"";
+    position: absolute;
+    background-color: $border;
+    right: -5px;
+    top: 1px;
+    bottom:0;
+    padding:2.5px;
+    transform: skew(0,45deg);
+  }
+  &:after{
+    content:"";
+    position: absolute;
+    background-color: $border;
+    width: 100%;
+    left: 1px;
+    bottom: -4px;
+    height: 5px;
+    transform: skew(45deg);
+  }
 }
 
 //Style for buttom down header
@@ -43,6 +67,26 @@
   -moz-transform: $transform;
   -ms-transform: $transform;
   transform: $transform;
+}
+
+@mixin contentSection{
+  padding: 80px 0;
+}
+
+@mixin decoracion($left, $right){
+  position: relative;
+  .img-left{
+    position:absolute;
+    width: 15%;
+    left: 0;
+    top: $left;
+  }
+  .img-right{
+    position:absolute;
+    width: 15%;
+    right: 0;
+    top: $right;
+  }
 }
 
 //Breakpoint 
