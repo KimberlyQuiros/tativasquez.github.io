@@ -1,0 +1,12 @@
+.content-about{
+	background-color: $color_background;
+	.container{
+		.content-profile{
+			.edit-photo{
+				@include photo($icon_color1, transparent, $icon_color1);
+			}
+		}
+		.text-profile{
+		}
+	}
+}

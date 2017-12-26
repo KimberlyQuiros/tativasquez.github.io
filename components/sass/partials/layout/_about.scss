@@ -1,0 +1,20 @@
+.content-about{
+	@include contentSection;
+	overflow: hidden;
+	.container{
+		@include decoracion(10%, 10%);
+		overflow: hidden;
+		.content-profile{
+			width: 135px;
+			margin: 0 auto;
+			text-align: center;
+			.edit-photo{
+				@include photo($icon_color1, transparent, $icon_color1);
+			}
+		}
+		.text-profile{
+			width: 50%;
+			margin: 25px auto;
+		}
+	}
+}
