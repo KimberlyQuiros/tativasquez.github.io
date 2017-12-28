@@ -1,5 +1,5 @@
 .content-projects{
-	@include contentSection;
+	@include contentSection(80px 0);
 	margin: 10px 0;
 	.projects-list{
 		margin-top: 72px;

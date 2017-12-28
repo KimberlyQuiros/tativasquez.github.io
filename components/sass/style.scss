@@ -8,16 +8,16 @@
 /*
  * MDB
  */
-@import "bootstrap";
-@import "font-awesome/font-awesome";
+  @import "bootstrap";
+  @import "font-awesome/font-awesome";
 
 /*
  * Partials
  */
-@import "partials/normalize";
-@import "partials/variables";
-@import "partials/mixins";
-@import "partials/globals";
+  @import "partials/normalize";
+  @import "partials/variables";
+  @import "partials/mixins";
+  @import "partials/globals";
 
  /*
   * Layout
@@ -28,6 +28,7 @@
   @import "partials/layout/projects";
   @import "partials/layout/about";
   @import "partials/layout/contact";
+  @import "partials/layout/footer";
 
  /*
  * Skin
@@ -37,3 +38,4 @@
   @import "partials/skin/projects";
   @import "partials/skin/about";
   @import "partials/skin/contact";
+  @import "partials/skin/footer";

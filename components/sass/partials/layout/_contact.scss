@@ -1,5 +1,21 @@
 .content-contact{
-	@include contentSection;
+	@include contentSection(80px 0 120px);
+	.content-title{
+		h2{
+			margin-top: 15px;
+		}
+		.rrss{
+			text-align:center;
+			margin-top: 48px;
+			a{
+				margin-right: 55px;
+				padding: 25px 20px 15px!important;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
 	.content-text{
 		text-align: center;
 		.list-contact{

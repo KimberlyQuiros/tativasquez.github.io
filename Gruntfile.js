@@ -30,6 +30,12 @@ module.exports = function(grunt) {
                 files: { 
                     'js/script.min.js': ['components/js/script.js'],
                     'js/plugins.min.js': [
+                        'components/plugins/js/fontawesome/fa-brands.min.js',
+                        'components/plugins/js/fontawesome/fa-regular.min.js',
+                        'components/plugins/js/fontawesome/fa-solid.min.js',
+                        'components/plugins/js/fontawesome/fa-v4-shims.min.js',
+                        'components/plugins/js/fontawesome/fontawesome-all.min.js',
+                        'components/plugins/js/fontawesome/fontawesome.min.js',
                         'components/plugins/js/jquery.easing.min.js',
                         'components/plugins/js/scrolling-nav.js',
                         'components/plugins/js/jquery.matchHeight.js',

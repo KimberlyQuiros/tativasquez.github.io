@@ -103,8 +103,8 @@
   transform: $transform;
 }
 
-@mixin contentSection{
-  padding: 80px 0;
+@mixin contentSection($padding){
+  padding: $padding;
 }
 
 @mixin decoracion($left, $right){

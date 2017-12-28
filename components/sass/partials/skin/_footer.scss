@@ -1,0 +1,10 @@
+.content-footer{
+	background-color: $footer_background;
+
+	.list-footer p{
+		color: $text_footer;
+		a{
+			color: $icon_color2;
+		}
+	}
+}
