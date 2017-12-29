@@ -1,0 +1,18 @@
+.content-projects{
+	.project-item{
+		.item-text{
+			background-color: $color_project;
+		}
+		//link view project
+		.btn-view-more a{
+			color: $color_text;
+		}
+
+		//button view more projects
+	}
+	.btn-projects{
+		.btn-primary{
+			@include button($color_btn, transparent, $color_btn);
+		}
+	}
+}

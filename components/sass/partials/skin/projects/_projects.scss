@@ -1,0 +1,20 @@
+.projects{
+	.nav-pills{
+		.active a{
+			background-color: transparent;
+			color: $color_nav;
+			&:hover, &:focus, &:active{
+				background-color: transparent;
+				color: $color_nav;
+			}
+		}
+		li a{
+			color: $color_nav;
+			text-transform: uppercase;
+			&:hover, &:focus, &:active{
+				background-color: transparent;
+				color: $color_nav;
+			}
+		}
+	}
+}

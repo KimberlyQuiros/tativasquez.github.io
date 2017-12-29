@@ -1,0 +1,53 @@
+.content-contact{
+	.content-title{
+		.rrss a{
+			// @include button($icon_color2, $icon_color1, $color_cover);
+			background-color: $icon_color1;
+			color:$color_cover;
+			border-radius: 4px;
+			.svg-inline--fa{
+				font-size: 30px;
+			}					
+		}
+	}
+	.content-text{
+		.list-contact{
+			li{
+				font-size: 35px;
+				.icon1{
+					position: relative;
+					&:after{
+						content:"\f1fa";
+						position:absolute;
+						font-size: 35px;
+						left: 2px;
+						right: 0;
+						color: $icon_color2;
+						z-index: -1;
+					}
+				}
+				.icon2{
+					position: relative;
+					&:after{
+						content:"\f10b";
+						position:absolute;
+						font-size: 35px;
+						left: 2px;
+						right: 0;
+						color: $icon_color2;
+						z-index: -1;
+					}
+				}
+				.fa-at{
+					color: $icon_color1;
+					z-index: 1;
+					font-size: 40px;
+				}
+				.fa-mobile{
+					color: $icon_color1;
+					z-index: 1;
+				}
+			}
+		}
+	}
+}

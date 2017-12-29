@@ -8294,7 +8294,8 @@ ul {
 
 h1 {
   font-size: 60px;
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", serif;
+  text-transform: uppercase; }
   @media (max-width: 767px) {
     h1 {
       text-align: right !important; } }
@@ -8347,6 +8348,16 @@ p {
   line-height: 1.5;
   font-family: "Varela Round", sans-serif;
   color: #787878; }
+
+#go-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 145px;
+  background-color: #4d4c4c;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff; }
 
 /*
   * Layout
@@ -8458,6 +8469,12 @@ p {
     -moz-animation: bounce 2s infinite;
     -ms-animation: bounce 2s infinite;
     animation: bounce 2s infinite; }
+
+.projects .cover-nav {
+  height: 365px;
+  background-size: 100%; }
+  .projects .cover-nav .title-content {
+    margin-top: 10%; }
 
 #top-header .menu {
   display: none; }
@@ -8647,6 +8664,8 @@ p {
       -webkit-transition: all 0.7s ease;
       -moz-transition: all 0.7s ease;
       transition: all 0.7s ease; }
+    .content-projects .project-item .icons-category.aquitectura {
+      width: 70px; }
     .content-projects .project-item .hover {
       display: none; }
     .content-projects .project-item .btn-view-more {
@@ -8654,6 +8673,33 @@ p {
   .content-projects .btn-projects {
     margin: 35px auto 0;
     text-align: center; }
+
+.projects .nav-pills {
+  margin: 0 auto;
+  text-align: center; }
+  .projects .nav-pills li {
+    position: relative;
+    width: 150px;
+    display: inline-block;
+    float: none;
+    margin: 0 auto;
+    text-align: center; }
+    .projects .nav-pills li a {
+      padding-top: 42px; }
+    .projects .nav-pills li img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto; }
+    .projects .nav-pills li:first-child a img {
+      width: 33px; }
+    .projects .nav-pills li:nth-child(2) a img {
+      width: 50px; }
+    .projects .nav-pills li:last-child a img {
+      width: 32px;
+      top: -15px; }
 
 .content-about {
   padding: 80px 0;
@@ -8761,7 +8807,7 @@ p {
 .content-projects .project-item .btn-view-more a {
   color: #787878; }
 
-.content-projects .btn-projects a {
+.content-projects .btn-projects .btn-primary {
   font-size: 14px;
   font-size: 1.4rem;
   background-color: transparent;
@@ -8774,7 +8820,7 @@ p {
   text-transform: uppercase;
   padding: 15px 20px;
   position: relative; }
-  .content-projects .btn-projects a:before {
+  .content-projects .btn-projects .btn-primary:before {
     content: "";
     position: absolute;
     background-color: #888888;
@@ -8783,7 +8829,7 @@ p {
     bottom: 0;
     padding: 2.5px;
     transform: skew(0, 45deg); }
-  .content-projects .btn-projects a:after {
+  .content-projects .btn-projects .btn-primary:after {
     content: "";
     position: absolute;
     background-color: #888888;
@@ -8792,6 +8838,22 @@ p {
     bottom: -4px;
     height: 5px;
     transform: skew(45deg); }
+  .content-projects .btn-projects .btn-primary:hover, .content-projects .btn-projects .btn-primary:focus, .content-projects .btn-projects .btn-primary:active {
+    background-color: transparent; }
+
+.projects .nav-pills .active a {
+  background-color: transparent;
+  color: #4d4c4c; }
+  .projects .nav-pills .active a:hover, .projects .nav-pills .active a:focus, .projects .nav-pills .active a:active {
+    background-color: transparent;
+    color: #4d4c4c; }
+
+.projects .nav-pills li a {
+  color: #4d4c4c;
+  text-transform: uppercase; }
+  .projects .nav-pills li a:hover, .projects .nav-pills li a:focus, .projects .nav-pills li a:active {
+    background-color: transparent;
+    color: #4d4c4c; }
 
 .content-about {
   background-color: #f8f8f8; }
@@ -8828,46 +8890,17 @@ p {
       transform: skew(-43deg); }
 
 .content-contact .content-title .rrss a {
-  font-size: 14px;
-  font-size: 1.4rem;
-  background-color: transparent;
-  border: 1px solid #8787af;
-  border-right: 0;
-  border-bottom: 0;
-  border-radius: 0;
-  color: #8787af;
-  font-family: "Arvo", serif;
-  text-transform: uppercase;
-  padding: 15px 20px;
-  position: relative; }
-  .content-contact .content-title .rrss a:before {
-    content: "";
-    position: absolute;
-    background-color: #8787af;
-    right: -5px;
-    top: 1px;
-    bottom: 0;
-    padding: 2.5px;
-    transform: skew(0, 45deg); }
-  .content-contact .content-title .rrss a:after {
-    content: "";
-    position: absolute;
-    background-color: #8787af;
-    width: 100%;
-    left: 1px;
-    bottom: -4px;
-    height: 5px;
-    transform: skew(45deg); }
+  background-color: #8787af;
+  color: #fff;
+  border-radius: 4px; }
   .content-contact .content-title .rrss a .svg-inline--fa {
     font-size: 30px; }
 
 .content-contact .content-text .list-contact li {
   font-size: 35px; }
-  .content-contact .content-text .list-contact li .fa-at {
-    position: relative;
-    color: #8787af;
-    z-index: 1; }
-    .content-contact .content-text .list-contact li .fa-at :after {
+  .content-contact .content-text .list-contact li .icon1 {
+    position: relative; }
+    .content-contact .content-text .list-contact li .icon1:after {
       content: "\f1fa";
       position: absolute;
       font-size: 35px;
@@ -8875,11 +8908,9 @@ p {
       right: 0;
       color: #adc3e5;
       z-index: -1; }
-  .content-contact .content-text .list-contact li .fa-mobile {
-    position: relative;
-    color: #8787af;
-    z-index: 1; }
-    .content-contact .content-text .list-contact li .fa-mobile:after {
+  .content-contact .content-text .list-contact li .icon2 {
+    position: relative; }
+    .content-contact .content-text .list-contact li .icon2:after {
       content: "\f10b";
       position: absolute;
       font-size: 35px;
@@ -8887,6 +8918,13 @@ p {
       right: 0;
       color: #adc3e5;
       z-index: -1; }
+  .content-contact .content-text .list-contact li .fa-at {
+    color: #8787af;
+    z-index: 1;
+    font-size: 40px; }
+  .content-contact .content-text .list-contact li .fa-mobile {
+    color: #8787af;
+    z-index: 1; }
 
 .content-footer {
   background-color: #4d4c4c; }

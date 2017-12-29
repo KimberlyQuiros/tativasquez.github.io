@@ -39,6 +39,9 @@
     height: 5px;
     transform: skew(45deg);
   }
+  &:hover, &:focus, &:active{
+    background-color: $background-color;
+  }
 }
 
 @mixin photo($border, $background-color, $color) {

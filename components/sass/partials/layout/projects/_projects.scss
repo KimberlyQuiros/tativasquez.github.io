@@ -1,0 +1,45 @@
+.projects{
+	.project-item{
+		// display: none;
+	}
+	.nav-pills{
+		margin: 0 auto;
+		text-align: center;
+		li{
+			position: relative;
+			width: 150px;
+			display: inline-block;
+			float: none;
+			margin: 0 auto;
+			text-align: center;
+
+			a{
+				padding-top: 42px;
+			}
+			img{
+				position:absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			&:first-child{
+				a img{
+					width: 33px;
+				}
+			}
+			&:nth-child(2){
+				a img{
+					width: 50px;
+				}
+			}
+			&:last-child{
+				a img{
+					width: 32px;
+					top: -15px;
+				}
+			}
+		}
+	}
+}

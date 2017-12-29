@@ -31,22 +31,24 @@ $(function() {
     $('.item-height').matchHeight();
 });
 
-$(window).on('load', function () {
+$(document).ready(function(){
+  $(window).on('load', function () {
   /* VARIABLES */
-    size_div = jQuery("#projects .item-load-more").size();
-    x = 6;
-    $('#projects .item-load-more:lt(' + x + ')').fadeIn(); // este muestra la cant de intem de X
+    size_div = jQuery("#projects .project-item").size();
+    x = 3;
+    $('#projects .project-item:lt(' + x + ')').fadeIn(); // este muestra la cant de intem de X
     $('#btn-load-more').click(function () {
 
         x = (x + 3 <= size_div) ? x + 3 : size_div;
-        $('#projects .item-load-more:lt(' + x + ')').slideDown();
+        $('#projects .project-item:lt(' + x + ')').slideDown();
         if (x == size_div) {
           $('.load-more').css('display','none');
         }
     });
-    if (size_div <= 6) {
+    if (size_div <= 3) {
       $('.load-more').css('display','none');
     }
+  });
 });
 
 
@@ -123,5 +125,44 @@ $(document).ready(function(){
   // alert('vfvfv');
   $(".lazy").lazyload({
     effect : "fadeIn"
+  });
+});
+
+$(document).ready(function(){
+  $('.nav-pills li').click(function(){
+    var $class = $(this).attr('class');
+    if ($class === 'branding') {
+      $('.project-hover.branding').css('display','block');
+      $('.project-hover.aquitectura').css('display','none');
+      $('.project-hover.others').css('display','none');
+    }else if($class === 'aquitectura'){
+      $('.project-hover.aquitectura').css('display','block');
+      $('.project-hover.branding').css('display','none');
+      $('.project-hover.others').css('display','none');
+    }else{
+       $('.project-hover.others').css('display','block');
+      $('.project-hover.branding').css('display','none');
+      $('.project-hover.aquitectura').css('display','none');
+    }
+  });
+});
+
+$(document).ready(function(){
+  $(window).scroll(function() {
+      if ($('header').scrollTop() > 50) {
+          $('#go-to-top').fadeIn();
+          $('#go-to-top').css('display','block');
+      } else {
+          $('#go-to-top').fadeOut();
+          $('#go-to-top').css('display','none');
+      }
+  });
+  $('#go-to-top').click(function(e){
+    e.preventDefault();
+    var body = $("html, body");
+    var target = $(e.currentTarget).attr('href');
+    var offset = $(target).offset();
+    //$(document).scrollTop(offset.top);
+    body.animate({scrollTop: offset.top});
   });
 });

@@ -22,20 +22,23 @@
  /*
   * Layout
   */
-  @import "partials/layout/cover";
-  @import "partials/layout/nav";
-  @import "partials/layout/showreel";
-  @import "partials/layout/projects";
-  @import "partials/layout/about";
-  @import "partials/layout/contact";
-  @import "partials/layout/footer";
+  @import "partials/layout/home/cover";
+  @import "partials/layout/common/cover";
+  @import "partials/layout/common/nav";
+  @import "partials/layout/home/showreel";
+  @import "partials/layout/common/projects";
+  @import "partials/layout/projects/projects";
+  @import "partials/layout/home/about";
+  @import "partials/layout/home/contact";
+  @import "partials/layout/common/footer";
 
  /*
  * Skin
  */
-  @import "partials/skin/nav";
- 	@import "partials/skin/showreel";
-  @import "partials/skin/projects";
-  @import "partials/skin/about";
-  @import "partials/skin/contact";
-  @import "partials/skin/footer";
+  @import "partials/skin/common/nav";
+ 	@import "partials/skin/home/showreel";
+  @import "partials/skin/common/projects";
+  @import "partials/skin/projects/projects";
+  @import "partials/skin/home/about";
+  @import "partials/skin/home/contact";
+  @import "partials/skin/common/footer";

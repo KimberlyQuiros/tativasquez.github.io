@@ -39,6 +39,7 @@ ul {
 h1{
   font-size: 60px;
   font-family: $title;
+  text-transform: uppercase;
   @media(max-width: 767px){
     text-align: right!important;
   }
@@ -95,4 +96,16 @@ p{
     line-height: 1.5;
     font-family: $body;
     color: $color_text;
+}
+
+#go-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 145px;
+  background-color: $color_nav;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: $color_cover;
+  // display: none;
 }
