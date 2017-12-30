@@ -6,10 +6,11 @@
 */
 
 /*
- * MDB
+ * PLUGINS
  */
   @import "bootstrap";
   @import "font-awesome/font-awesome";
+  @import "lightgallery/lightgallery";
 
 /*
  * Partials
@@ -31,14 +32,18 @@
   @import "partials/layout/home/about";
   @import "partials/layout/home/contact";
   @import "partials/layout/common/footer";
+  @import "partials/layout/detail-projects/content";
+  @import "partials/layout/detail-projects/workflow";
 
  /*
  * Skin
  */
   @import "partials/skin/common/nav";
- 	@import "partials/skin/home/showreel";
+  @import "partials/skin/home/showreel";
   @import "partials/skin/common/projects";
   @import "partials/skin/projects/projects";
   @import "partials/skin/home/about";
   @import "partials/skin/home/contact";
   @import "partials/skin/common/footer";
+  @import "partials/skin/detail-projects/cover";
+  @import "partials/skin/detail-projects/workflow";

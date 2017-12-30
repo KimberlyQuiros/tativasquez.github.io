@@ -1,0 +1,20 @@
+.detail-projects{
+	.content-detail-projects{
+		@include contentSection(80px 0);
+		.lightgallery{
+			a{
+				margin-right: 15px;
+				&:nth-child(3n+0){
+					margin-right: 0;
+				}
+			}
+			img{
+				width: 150px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.lg-backdrop.in {
+  	opacity: 0.8;
+	}
+}
